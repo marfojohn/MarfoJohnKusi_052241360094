@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+.switch{
+    position: relative;
+    width: 370px;
+    height: 280px;
+    border-radius: 50px;
+    background-color: #D5BFBD;
+    box-shadow: 0 10px 15px #98849b;
+    z-index: 1000;
+    cursor: pointer;
+}

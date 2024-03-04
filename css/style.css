@@ -1,0 +1,178 @@
+/* All  my css code are written below john Empire copyright all rights reserved */
+*{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+body{
+    font-size: 40px;
+    overflow-x: hidden;
+}
+.nav-link{
+    color: #ffff !important;
+}
+.navbar{
+    background-color: #800080 !important;
+}
+.info{
+    margin: 0 0 0 90px;
+}
+#second{
+    margin-top: 40px;
+}
+.white{
+    width: auto;
+    height: 90px;
+    background-color: #fff;
+    padding: 70px 0 70px 0;
+    text-align: center;
+}
+.fa{
+    font-size: 80px;
+    color: #c9a62d;
+
+}
+.fa:hover{
+    color: #800080;
+}
+.icon-conatainer{
+    display: block;
+}
+.icon-name{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+}
+footer{
+    width: auto;
+    height: auto;
+    background-color:  #272949;
+    margin-top: 400px;
+    padding-top: 30px;
+}
+ul{
+    list-style: none;
+    color: white;
+}
+li{
+    font-size: medium;
+}
+li:hover{
+    color: #c9a62d;
+}
+body a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #c9a62d;
+}
+p{
+    font-size: larger;
+    font-weight: bold;
+}
+.copyright{
+    padding-bottom: 10px;
+}
+.copyright-p{
+    font-size: smaller;
+    text-align: center;
+    color: white;
+}
+.copyright-p:hover{
+    color: #c9a62d;
+}
+#timetables{
+    margin-top: 150px;
+}
+.timetables-div{
+    background:  #272949;
+    width: auto;
+    height: 150px;
+    padding-top: 10px;
+}
+.timetables-p{
+    color: #fff;
+    text-align: center;
+}
+.timetables-footer{
+    margin-top: 40px;
+}
+.timetables-pdf{
+    width: 100%;
+    height: 800px;
+    margin-top: 40px;
+}
+.a{
+    color: grey;
+    font-size: medium;
+    padding-top: 15px;
+}
+#departments{
+    margin-top: 100px;
+}
+.departments-p{
+    color: black;
+}
+.departments-p:hover{
+    color: #c9a62d;
+}
+.departments-logo{
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 30%;
+}
+.departments-h1{
+    color: #272949;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.department-footer{
+    margin-top: 100px;
+}
+#faculty-header{
+    margin-top: 10px;
+}
+.faculty-container{
+    width: auto;
+    height: 120px;
+    background: white;
+}
+.faculty-logo{
+    width: 7%;
+    display: inline-block;
+    margin-left: 150px;
+}
+.logo-p{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #8e0000;
+}
+.faculty-image{
+    width: 100%;
+}
+.faculty-footer{
+    margin-top: 100px;
+}
+.center{
+    text-align: center;
+}
+#faculty-depart{
+    margin-top: 40px;
+}
+.faculty-p{
+    font-size: medium;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.faculty-p:hover{
+    font-size: large;
+}
+.first-row{
+    color: #272949;
+}
+.second-row{
+    margin-top: 90px;
+    color: #272949;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Designed by John Empire -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Kumasi Technical University Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="kstu_logo_0.png" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+    <img src="kstu_logo_0.png" alt="school logo" class="payments-logo" width="15%" style="margin-top: 100px;">
+    <div class="title">KsTU School Registration System</div>
+    <div class="content">
+        <form id="registrationForm">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input id="firstName" type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input id="lastName" type="text" placeholder="Enter your last name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Student Number</span>
+                    <input id="studentID" type="text" placeholder="Enter your studentID" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Date of Birthday</span>
+                    <input id="birthday" type="date" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Department</span>
+                    <input id="department" type="text" placeholder="Enter your Department" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Faculty</span>
+                    <input id="faculty" type="text" placeholder="Enter your Faculty">
+                </div>
+                <div class="input-box">
+                    <span class="details">Address</span>
+                    <input id="address" type="text" placeholder="Enter your Address in words">
+                </div>
+                <div class="input-box">
+                    <span class="details">Upload Picture</span>
+                    <input type="file" id="picture" accept="image/*" required>
+                    <img src="#" alt="Uploaded Picture" id="uploadedPicture" style="max-width: 100%; display: none;">
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('picture').addEventListener('change', function () {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById('uploadedPicture').src = e.target.result;
+            document.getElementById('uploadedPicture').style.display = 'block';
+        }
+        reader.readAsDataURL(this.files[0]);
+    });
+
+    document.getElementById('registrationForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Gather form data
+        var firstName = document.getElementById('firstName').value;
+        var lastName = document.getElementById('lastName').value;
+        var studentID = document.getElementById('studentID').value;
+        var birthday = document.getElementById('birthday').value;
+        var department = document.getElementById('department').value;
+        var faculty = document.getElementById('faculty').value;
+        var address = document.getElementById('address').value;
+
+        // Show prompt message
+        var message = "Congratulations, " + firstName + " " + lastName + ", your registration is successful!";
+
+        // Display prompt message
+        alert(message);
+    });
+</script>
+
+</body>
+</html>

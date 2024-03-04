@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Designed by John Empire -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kumasi Technical University Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css">
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="kstu_logo_0.png" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+    <img src="kstu_logo_0.png" alt="school logo" class="payments-logo" width="15%" style="margin-top: 100px;">
+    <div class="title">KsTU School Fees Payment System</div>
+    <div class="content">
+        <form id="myForm" onsubmit="submitForm(event)">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Name</span>
+                    <input id="nameInput" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Student Number</span>
+                    <input id="studentIdInput" type="text" placeholder="Enter your studentID" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Amount</span>
+                    <input id="amountInput" type="text" placeholder="Enter Amount" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Department</span>
+                    <input id="departmentInput" type="text" placeholder="Department" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <img src="pngaaa.com-3078140.png" alt="" class="payment-method">
+                </div>
+                <div class="col-lg-2">
+                    <img src="pngfind.com-money-symbol-png-163563.png" alt="" class="payment-method">
+                </div>
+                <div class="col-lg-2">
+                    <img src="Access-bank-PLC.png" alt="" class="small payment-method">
+                </div>
+                <div class="col-lg-2">
+                    <img src="NicePng_fidelity-logo-png_3560467.png" alt="" class="small payment-method">
+                </div>
+                <div class="col-lg-2">
+                    <img src="pngaaa.com-3078092.png" alt="" class="payment-method">
+                </div>
+                <div class="col-lg-2">
+                    <img src="cashapp.png" alt="" class="small payment-method">
+                </div>
+                <!-- Add more payment methods as needed -->
+            </div>
+            <div class="button">
+                <input type="submit" value="Proceed to Payment">
+            </div>
+        </form>
+    </div>
+    <!-- Feedback message container -->
+    <div id="feedbackMessage" class="mt-3"></div>
+</div>
+<script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="payments.js"></script>
+<script>
+    function submitForm(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        var name = document.getElementById('nameInput').value;
+        var studentId = document.getElementById('studentIdInput').value;
+        var amount = document.getElementById('amountInput').value;
+        var department = document.getElementById('departmentInput').value;
+
+        // Construct feedback message
+        var message = "Thank you, " + name + " your payment was sucessfull check your school portal for more info";
+
+        // Display feedback message
+        document.getElementById('feedbackMessage').innerHTML = "<div class='alert alert-success'>" + message + "</div>";
+    }
+</script>
+</body>
+</html>
